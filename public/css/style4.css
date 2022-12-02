@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #07c670;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #1abc9c;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1abc9c;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    transition: 0.6s;
+    font-size: 1.25em;
+}
+
+header ul li a.sticky {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #dc8116;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)) ,url(/drawable4/shape.png) ; */
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.square {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 14%;
+    /* left: 1%; */
+    opacity: 0.2;
+    overflow: hidden;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    background: white;
+    margin: 6% auto;
+    border-radius: 15px;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 0 #c7c6c6;
+    top: 12%;
+    /* right: 2%; */
+    /* bottom: 8%; */
+    /* left: 8%; */
+    align-items: center;
+}
+
+.button-box {
+    width: 224px;
+    margin: 15% auto;
+    position: relative;
+    box-shadow: 0 0 20px 3px #07c670;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 112px;
+    height: 100%;
+    background: linear-gradient(to right, #08c06d, #07c670);
+    border-radius: 30px;
+    transition: 1s;
+}
+
+
+/* .social-media{
+    margin: 40 px auto;
+    text-align: center;
+
+}
+.social-media img{
+    width: 30px;
+    margin: 0px 10px;
+    box-shadow: 0 0 10px 0 #f7f7f7;
+    cursor: pointer;
+
+} */
+
+.login-form {
+    top: 180px;
+    position: absolute;
+    /* border: 2px solid; */
+    width: 280px;
+    transition: 1s;
+}
+
+.form-field {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid #999;
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+}
+
+.submit {
+    width: 85%;
+    padding: 10px 30px;
+    top: 50px;
+    cursor: pointer;
+    display: block;
+    margin-top: 50px;
+    margin-left: 17px;
+    background: linear-gradient(to right, #08c06d, #07c670);
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+
+/* .big-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #e80a0a, #dc8d16);
+    bottom: 25%;
+    right: 25%;
+    transform: translate(-40%, 38%);
+    /* opacity: 0.4; 
+} */
+
+
+/* .big-circle:after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-radius: 50%;
+    left: 40px;
+    top: 70px;
+    right: -10px;
+     top: calc(50% - 180px);
+    left: calc(50% - 180px);
+  }  */
+
+.hire-us {
+    color: #07c670;
+    stroke-width: 20%;
+    stroke: antiquewhite;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.p1 {
+    color: #07c670;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2cm;
+    text-indent: 2cm;
+}
